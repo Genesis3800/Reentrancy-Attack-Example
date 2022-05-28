@@ -6,7 +6,8 @@ import "@openzeppelin/contracts/utils/Address.sol";
 // 1. import contract
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-// 2. inherit from ReentrancyGuard
+// 2 solutions- 1: inherit from ReentrancyGuard
+//              2: Update the balance before sending the money
 contract Bank is ReentrancyGuard {
     using Address for address payable;
 
